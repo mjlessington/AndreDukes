@@ -14,7 +14,11 @@
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -39,9 +43,48 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">"Always Innovating"</div>
+                <div class="masthead-subheading text-light">"Always Innovating"</div>
                 <div class="masthead-heading text-uppercase text-primary">Innovative Strategic Solutions</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalLong">
+    Tell Me More
+  </button>
+  
+  <!-- About Modal -->
+  <div class="modal fade text-dark" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">More About ISS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <h5>Mission Statement</h5>
+            <p> 
+            Innovative Strategic Solutions (ISS) strive to provide you with on-time and top-notch quality consultant services, products, and deliverables. ISS will partner with clients from the private, public, and not-for-profit sectors in all regions to identify their highest-value opportunities, address their most critical challenges, and transform their organizations.</p>
+             
+            <h5>About Us</h5> 
+            <p>Innovative Strategic Solutions is an innovative thought leader in the consulting industry with a strong focus on strategy. In practice, Innovative Strategic Solutions will bring the perspective, understanding, and hands-on know-how to build the future as you see it. Innovative Strategic Solutions seeks the opportunity to apply our talents to complex, important challenges.</p>
+             
+            <h5>Goals </h5>
+            <p>Our work is founded on a rigorous understanding of leadership, education, management, and change. We study markets, trends, and emerging best practices, in every industry and region, locally and nationally, to meet the needs of our clients. 
+            Serve our clients by integrating purpose into their operations and having the highest enduring impact in each engagement. 
+            Partner with purposeful organizations to impact positive change.</p>
+            
+            <h5>Our Purpose </h5>
+            <p>Our clients' needs are constantly changing, so we continually seek new and better ways to serve them. We serve clients at every level of their organization, whether as a trusted advisor to executives, professional development workshops, or as a hands-on coach for front-line employees. We partner with clients to put recommendations into practice, work directly with them over the long term, drive operational improvement, and apply new working methods. We focus on delivering practical and enduring results and equipping our clients to grow and lead.</p>
+
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
             </div>
         </header>
         <!-- Services-->
@@ -49,7 +92,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -57,16 +100,32 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-school fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Educational Consulting</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">Educational Leadership</h4>
+                        <p class="text-muted"> Distributive Leadership, Leadership and Program Development, School Improvement, Grant Writing, Organizational Development.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-house-user fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Real Estate Consulting</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">Teacher and Leadership Development</h4>
+                        <p class="text-muted">Teacher and Administrator Support, Professional Learning Communities(PLC), Professional Leadership and Mentoring, Instructional Coaching.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-book-reader fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Curriculum and Instruction</h4>
+                        <p class="text-muted">Curriculum Writing and Development, Common Assessments and Design, Instructional Design, Intervention Strategies and Techniques, Data Analysis.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-sign fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Real Estate</h4>
+                        <p class="text-muted">Dr. Dukes is a licensed agent with KW Drive in Greenville, South Carolina. Growing up on a working farm made me understand the concept of home is many things...home, health, living, working, entertaining and most importantly security. Let me use my unique lens to find your special place called HOME. </p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -74,7 +133,7 @@
                             <i class="fas fa-building fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Business Consulting</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">Strategic Planning, Project Management, SWOT Analysis. </p>
                     </div>
                 </div>
             </div>
@@ -97,7 +156,7 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">St. John's High School</div>
-                                <div class="portfolio-caption-subheading text-muted">Charleston, SC</div>
+                                <div class="portfolio-caption-subheading text-muted">Creation of multiple academic pathways for college and career-ready students</div>
                             </div>
                         </div>
                     </div>
@@ -111,25 +170,25 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Southside High School</div>
-                                <div class="portfolio-caption-subheading text-muted">Greenville, SC</div>
+                                <div class="portfolio-caption-subheading text-muted">Created accelerated learning opportunities for all students, implementing AVID and Dual Credit programming</div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="assets/img/portfolio/Leadership Team Retreat.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                                <div class="portfolio-caption-heading">Leadership Developement</div>
+                                <div class="portfolio-caption-subheading text-muted">Facilitation of retreats for eduational leaders</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
@@ -168,9 +227,9 @@
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Window</div>
                                 <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div> -->
+                            </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -178,7 +237,7 @@
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h2 class="section-heading text-uppercase">Testimonials</h2>
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
                 <ul class="timeline">
@@ -186,10 +245,10 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>"Always Innovating</h4>
+                                <!-- <h4>"Always Innovating</h4> -->
                                 <!-- <h4 class="subheading">Our Humble Beginnings</h4> -->
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Innovative Strategic Solutions is an innovative thought leader in the consulting industry with a strong focus on strategy. In practice, Innovative Strategic Solutions will bring the perspective, understanding, and hands-on know-how to build the future as you see it. Innovative Strategic Solutions seeks the opportunity to apply our talents to complex, important challenges.
+                            <div class="timeline-body"><p class="text-muted">“If you are looking for an education consultant with a wealth of experience and knowledge in the world of education, look no further than Andre Dukes. Andre processes the necessary insight needed to assist schools, students, and educators with effective, measurable, and impactful solutions.” -<em>Jay Blankenship, Greenville Regional Workforce Advisor, South Carolina Department of Commerce</em> 
                             </p></div>
                         </div>
                     </li>
@@ -197,10 +256,36 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Misson Statement</h4>
+                                <!-- <h4>Misson Statement</h4> -->
                                 <!-- <h4 class="subheading">An Agency is Born</h4> -->
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Innovative Strategic Solutions (ISS) strive to provide you with on-time and top-notch quality consultant services, products, and deliverables. ISS will partner with clients from the private, public, and not-for-profit sectors in all regions to identify their highest-value opportunities, address their most critical challenges, and transform their organizations.
+                            <div class="timeline-body"><p class="text-muted">"Andre Dukes is by far one of the best leaders that I have ever worked with. His ability to convey curriculum and instructional needs of students to his staff, organize pertinent professional development to move  educators toward implementation of effective pedagogical strategies with fidelity and reach the student population in a manner that they are eager to realize their individual potential is extraordinary. Dr. Dukes would be a valuable asset to any organization that is lucky to have him.”  -<em>Darwin Shorters, Teacher and Former Colleague</em>
+
+                            </p></div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>Misson Statement</h4> -->
+                                <!-- <h4 class="subheading">An Agency is Born</h4> -->
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">“Dr. Dukes is a transformative and thoughtful leader with extensive knowledge in curriculum and instructional leadership. His guidance and intentional work was instrumental in developing the High Schools that Works (HTSW) initiative and PLCs at Cane Bay High School.”  -<em>Cassandra Jennings, Retired Principal, Berkeley and Charleston County Schools</em>
+
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>Misson Statement</h4> -->
+                                <!-- <h4 class="subheading">An Agency is Born</h4> -->
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">“Andre provided support and guidance for assisting me with a large-scale project. His deliberative approach to strategic planning allowed me to develop a more productive method to reach my clients. He presented his recommendations in a meaningful way. Andre’s knowledge, organization, and experience was invaluable.”  -<em>Stephen Abernathy, Sales Consultant for Decorative Specialities 
+                            </em>
+
                             </p></div>
                         </div>
                     </li>
@@ -208,10 +293,10 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Purpose</h4>
+                                <!-- <h4>Purpose</h4> -->
                                 <!-- <h4 class="subheading">Transition to Full Service</h4> -->
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Our clients' needs are constantly changing, so we continually seek new and better ways to serve them. We serve clients at every level of their organization, whether as a trusted advisor to executives, professional development workshops, or as a hands-on coach for front-line employees. We partner with clients to put recommendations into practice, work directly with them over the long term, drive operational improvement, and apply new working methods. We focus on delivering practical and enduring results and equipping our clients to grow and lead.
+                            <div class="timeline-body"><p class="text-muted">“Every institution or organization needs an examination of current practice to be able to blossom into their full potential. Dr. Dukes honed his skills working in some of the toughest schools in the state. Dr. Dukes has the experience and tools to help an organization problem solve to attain its maximum performance. As a member of his staff, I have seen his practices enable an organization to flourish.” -<em>Kenneth Burnsed, Teacher and former Special Education Instructional Specialist- Charleston County School District</em> 
                             </p></div>
                         </div>
                     </li>
@@ -219,16 +304,11 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>Goals</h4>
+                                <!-- <h4>Goals</h4> -->
                                 <!-- <h4 class="subheading">Phase Two Expansion</h4> -->
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Our work is founded on a rigorous understanding of leadership, education, management, and change. We study markets, trends, and emerging best practices, in every industry and region, locally and nationally, to meet the needs of our clients. Our main goal are to 
-                            <ol class="text-muted font-italic">
-                                <li>Serve our clients by integrating purpose into their operations and having the highest enduring impact in each engagement. 
-                                </li>
-                                <li>Partner with purposeful organizations to impact positive change.
-                                </li>
-                            </ol>
+                            <div class="timeline-body"><p class="text-muted">“During the years that I have had the pleasure of working with this phenomenal young man, I have become more impressed with his humility and desire to see others succeed. I would describe Andre as an influential leader who has the ability to galvanize others to action. He is hard working, inquisitive, confident and a competent communicator. More importantly, in my opinion, he has become a significant part of what education is about. It is through his growth and development that I believe his vision of being an educational consultant can finally be realized.” -<em>Angela Childs-Kindred, Teacher, James Island Charter High School</em> 
+                            
                             </p></div>
                         </div>
                     </li>
@@ -241,7 +321,8 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted"></h3>
+                    <h3 class="section-subheading text-muted">ISS Consultants are professional educators who, guided by a strong sense of community, are academically strong, skilled and morally committed to educating in a wide range of culturally diverse learning environments. 
+                    </h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
@@ -280,33 +361,15 @@
                 </div>
             </div>
         </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/envato.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/designmodo.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/themeforest.jpg" alt="" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/creative-market.jpg" alt="" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
+        
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Schedule a <a href=""><em>free consultation</em></a> or <a href=""><em>contact ISS</em></a> today. We can't wait to hear from you!</h2>
                 </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -333,23 +396,22 @@
                         <div id="success"></div>
                         <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
                     </div>
-                </form>
+                </form> -->
+                
             </div>
         </section>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+                    
+                    <div class="col-lg-4 text-lg-left">Copyright © alwaysinnovatingiss.com</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <div class="col-lg-4 text-lg-right">
-                        <a class="mr-3" href="#!">Privacy Policy</a>
-                        <a href="#!">Terms of Use</a>
-                    </div>
+                    
                 </div>
             </div>
         </footer>
@@ -364,20 +426,17 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <h2 class="text-uppercase">St. John's High School</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     
                                         <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F1012730829%2Fvideos%2F10209924844530394%2F&show_text=false&width=560" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
                             
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul>
+                                    <p>Our current students represent a wide range of knowledge, aspirations, and skills. One of the hallmarks of Dr. Dukes’ leadership is preparing college and career ready graduates by offering multiple academic pathways. As the leader of St. John’s High School, Dr. Dukes developed an Advanced Placement (AP) Academy, Hospitality and Tourism Academy, and the first PLTW Computer Science Program in South Carolina.
+                                    </p>
+                                    
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close 
                                     </button>
                                 </div>
                             </div>
@@ -396,11 +455,10 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <h2 class="text-uppercase">Southside High School</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/285647042" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                                    <p>Our diversity is the just the beginning of the story.<br />
-                                    Southside High School, Greenville, SC, where excellence is our goal.</p>
+                                    <p>Dr. Dukes is widely known for encouraging learners to pursue their purpose through diverse academic programming and offerings. As a transformative leader, Dr. Dukes has created accelerated learning opportunities for all students. Currently, as the leader at Southside High School, Dr. Dukes implemented AVID and Dual Credit programming.</p>
                                     
                                     
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -424,18 +482,14 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <h2 class="text-uppercase">Leadership Developement Retreats</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
-                                    </ul>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Leadership Team Retreat.jpg" alt="" />
+                                    <p>We facilitate leadership team retreats, where school leaders come together to plan for the new school year. Topics covered include leader collaboration, distributive leadership professional development, and team building activities. </p>
+                                    
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close 
                                     </button>
                                 </div>
                             </div>
